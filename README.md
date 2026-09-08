@@ -49,7 +49,7 @@ That boundary exists because the process that creates a decision should not be t
 
 ## Redacted run output
 
-![Redacted Under The Line run output](assets/redacted-run-output.png)
+![Redacted Under The Line run output](assets/redacted-run-output.svg)
 
 The image above is a public rendering of a real governed verification result. Identifiers, private evidence paths, and internal implementation details are omitted.
 
