@@ -23,8 +23,25 @@ jobs:
           test -f README.md
           test -f LICENSE
           test -f docs/sample-run.schema.json
-          test -f assets/redacted-run-output.svg
+          test -f assets/operator-view-redacted.svg
           grep -q '^# Under The Line$' README.md
           test "$(grep -o 'PP-LOOP' README.md | wc -l | tr -d ' ')" -eq 1
+          grep -q '15 frozen slates and roughly 1,100 candidate rows since July 2026' README.md
+          grep -q 'nguyen.jimmy.2898@gmail.com' README.md
+          grep -q 'assets/operator-view-redacted.svg' README.md
+          ! grep -qi 'open an issue' README.md
           ! grep -R --line-number --fixed-strings 'github.com/nguyen0319/pp-loop' README.md docs LICENSE
           python -m json.tool docs/sample-run.schema.json >/dev/null
+          python - <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          text = Path('README.md').read_text(encoding='utf-8')
+          marker = '```mermaid\n'
+          assert marker in text, 'Mermaid opening fence missing'
+          start = text.index(marker) + len(marker)
+          end = text.index('\n```', start)
+          block = text[start:end]
+          assert block.lstrip().startswith('flowchart '), 'Mermaid flowchart body missing'
+          ET.parse('assets/operator-view-redacted.svg')
+          PY
