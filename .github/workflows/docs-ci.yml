@@ -1,0 +1,30 @@
+name: Docs CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  docs-integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate public docs surface
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f LICENSE
+          test -f docs/sample-run.schema.json
+          test -f assets/redacted-run-output.png
+          grep -q '^# Under The Line$' README.md
+          test "$(grep -o 'PP-LOOP' README.md | wc -l | tr -d ' ')" -eq 1
+          ! grep -R --line-number --fixed-strings 'github.com/nguyen0319/pp-loop' README.md docs LICENSE
+          python -m json.tool docs/sample-run.schema.json >/dev/null
