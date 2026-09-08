@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Under The Line redacted operator run detail</title>
+  <desc id="desc">A redacted public rendering of the operator Run Detail interface showing status cards, control validations, a frozen snapshot and state transitions.</desc>
+  <rect width="1440" height="900" fill="#080d1a"/>
+  <rect x="0" y="0" width="1440" height="64" fill="#0b1224"/>
+  <text x="56" y="40" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="20" font-weight="700">UNDER THE LINE</text>
+  <text x="1160" y="40" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">OPERATOR</text>
+
+  <text x="92" y="108" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">← Operator dashboard</text>
+  <text x="92" y="158" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" letter-spacing="2">RUN DETAIL</text>
+  <text x="92" y="208" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="38" font-weight="700">autonomous_prospective</text>
+  <text x="92" y="238" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="14">run_••••••••••••••••••••••••</text>
+
+  <!-- status cards -->
+  <g font-family="Inter,Segoe UI,Arial,sans-serif">
+    <rect x="92" y="278" width="190" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="110" y="308" fill="#94a3b8" font-size="12">Status</text>
+    <text x="110" y="342" fill="#f8fafc" font-size="18" font-weight="700">HOLD</text>
+
+    <rect x="296" y="278" width="190" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="314" y="308" fill="#94a3b8" font-size="12">Rules</text>
+    <text x="314" y="342" fill="#f8fafc" font-size="16" font-weight="700">••••••••••</text>
+
+    <rect x="500" y="278" width="220" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="518" y="308" fill="#94a3b8" font-size="12">Control release</text>
+    <text x="518" y="342" fill="#f8fafc" font-size="16" font-weight="700">control-integrity</text>
+
+    <rect x="734" y="278" width="190" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="752" y="308" fill="#94a3b8" font-size="12">Source date</text>
+    <text x="752" y="342" fill="#f8fafc" font-size="16" font-weight="700">2026-09-••</text>
+
+    <rect x="938" y="278" width="190" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="956" y="308" fill="#94a3b8" font-size="12">Created</text>
+    <text x="956" y="342" fill="#f8fafc" font-size="15" font-weight="700">••:••:•• UTC</text>
+
+    <rect x="1142" y="278" width="206" height="92" rx="12" fill="#111831" stroke="#27314f"/>
+    <text x="1160" y="308" fill="#94a3b8" font-size="12">Completed</text>
+    <text x="1160" y="342" fill="#f8fafc" font-size="15" font-weight="700">••:••:•• UTC</text>
+  </g>
+
+  <!-- control validations -->
+  <text x="92" y="424" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Control validations</text>
+  <rect x="92" y="446" width="802" height="154" rx="10" fill="#111831" stroke="#27314f"/>
+  <text x="116" y="480" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="700">INTAKE_SCOPE · PASS</text>
+  <text x="698" y="480" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">maker / attempt 1</text>
+  <text x="116" y="510" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">Blocker: no · evidence persisted before promotion</text>
+  <rect x="116" y="530" width="754" height="48" rx="8" fill="#0a0f1f"/>
+  <text x="132" y="560" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">{ "result": "PASS", "warnings": 0, "scope_match": true }</text>
+
+  <!-- frozen snapshot -->
+  <text x="930" y="424" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">Frozen snapshot</text>
+  <rect x="930" y="446" width="418" height="154" rx="10" fill="#111831" stroke="#27314f"/>
+  <text x="954" y="482" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Validation passed: yes</text>
+  <text x="954" y="514" fill="#cbd5e1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14">Frozen: •••••••••• UTC</text>
+  <text x="954" y="548" fill="#94a3b8" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">sha256</text>
+  <text x="954" y="574" fill="#cbd5e1" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">••••••••••••••••••••••••••••••••</text>
+
+  <!-- transitions -->
+  <text x="92" y="660" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">State transitions</text>
+  <rect x="92" y="684" width="1256" height="80" fill="#111831"/>
+  <rect x="92" y="684" width="3" height="80" fill="#39496f"/>
+  <text x="116" y="716" fill="#f8fafc" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">validating → hold</text>
+  <text x="116" y="744" fill="#94a3b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13">Immutable terminal evidence preserved; unresolved control prevents promotion.</text>
+
+  <!-- footer cards hinting more UI below -->
+  <rect x="92" y="800" width="390" height="56" rx="10" fill="#111831" stroke="#27314f"/>
+  <text x="116" y="834" fill="#cbd5e1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Artifacts · 12 persisted</text>
+  <rect x="510" y="800" width="390" height="56" rx="10" fill="#111831" stroke="#27314f"/>
+  <text x="534" y="834" fill="#cbd5e1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Source provenance · verified</text>
+  <rect x="928" y="800" width="420" height="56" rx="10" fill="#111831" stroke="#27314f"/>
+  <text x="952" y="834" fill="#cbd5e1" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="700">Agent executions · Maker / Checker</text>
+
+  <text x="92" y="884" fill="#64748b" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12">Redacted public rendering based on the current operator Run Detail layout. Private identifiers and evidence are omitted.</text>
+</svg>
