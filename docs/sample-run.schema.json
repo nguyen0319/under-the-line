@@ -1,0 +1,32 @@
+{
+  "candidate": {
+    "evaluated_sides": {
+      "over": {
+        "modeled_probability": 0.46
+      },
+      "under": {
+        "modeled_probability": 0.54
+      }
+    },
+    "line": 17.5,
+    "market": "Pitching Outs"
+  },
+  "checker": {
+    "evidence_integrity": "PASS",
+    "shadow_leakage": false,
+    "status": "PASS"
+  },
+  "maker": {
+    "decision": "A",
+    "side": "UNDER"
+  },
+  "placement": {
+    "user_placed": false
+  },
+  "rules_version": "<redacted>",
+  "run_id": "run_<redacted>",
+  "snapshot": {
+    "frozen": true,
+    "sha256": "<redacted>"
+  }
+}
