@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">Under The Line redacted run output</title>
+  <desc id="desc">Public rendering of a real governed verification result with private identifiers omitted.</desc>
+  <rect width="1400" height="760" fill="#ffffff"/>
+  <text x="70" y="95" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#111111">Under The Line</text>
+  <text x="70" y="138" font-family="Arial, sans-serif" font-size="24" fill="#222222">Redacted run output · public portfolio view</text>
+  <line x1="70" y1="165" x2="1330" y2="165" stroke="#111111" stroke-width="2"/>
+
+  <rect x="70" y="205" width="580" height="470" rx="18" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="105" y="275" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111111">Verification run</text>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#111111">
+    <text x="105" y="340">State</text><text x="430" y="340">PASS</text>
+    <text x="105" y="395">Candidate rows</text><text x="430" y="395">752</text>
+    <text x="105" y="450">Resolved memberships</text><text x="430" y="450">724</text>
+    <text x="105" y="505">Held / excluded</text><text x="430" y="505">28</text>
+    <text x="105" y="560">Exact props</text><text x="430" y="560">540</text>
+    <text x="105" y="615">Independent check</text><text x="430" y="615">PASS</text>
+  </g>
+
+  <rect x="700" y="205" width="630" height="470" rx="18" fill="#ffffff" stroke="#111111" stroke-width="2"/>
+  <text x="735" y="275" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#111111">Governance snapshot</text>
+  <g font-family="Arial, sans-serif" font-size="24" fill="#111111">
+    <text x="735" y="340">Targets loaded</text><text x="1060" y="340">No</text>
+    <text x="735" y="395">Network used</text><text x="1060" y="395">No</text>
+    <text x="735" y="450">Maker / Checker</text><text x="1060" y="450">Separated</text>
+    <text x="735" y="505">Replay</text><text x="1060" y="505">Byte-identical</text>
+    <text x="735" y="560">Production source</text><text x="1060" y="560">Private</text>
+    <text x="735" y="615">Public artifact</text><text x="1060" y="615">Redacted</text>
+  </g>
+
+  <text x="70" y="720" font-family="Arial, sans-serif" font-size="20" fill="#222222">Public rendering of a real governed verification result; identifiers and private evidence are omitted.</text>
+</svg>
